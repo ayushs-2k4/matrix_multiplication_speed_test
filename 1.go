@@ -41,7 +41,7 @@ func getMultiplication1(mat1 [][]int, mat2 [][]int) [][]int {
 	return mat3
 }
 
-// This one takes less than half the time of getMultiplication1 because of cache locality
+// This one takes less than half the time of getMultiplication1 in row major mode because of cache locality
 func getMultiplication2(mat1 [][]int, mat2 [][]int) [][]int {
 	m := len(mat1)
 	n := len(mat1[0])
